@@ -56,7 +56,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
-    //реализация обязательного метода у протокола UITableViewDataSource
+    //реализация обязательного метода у протокола UITableViewDataSource 1
     //данный метод запрашивает небходимые данные для релизации таблицы представления
     //так как данный класс является контроллером, реализующий паттерн MVC посредством делегирования, то
     //данный класс так же являтся делегатом (реализация протокола)
@@ -77,7 +77,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             taskMGR.deleteTaskByIndex();
             
             let cell:  UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Default")
-            
             cell.text = ""
             cell.detailTextLabel.text = ""            
         }

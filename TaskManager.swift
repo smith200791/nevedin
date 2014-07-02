@@ -26,19 +26,18 @@ class TaskManager: NSObject {
     var tasks = task[]() //инициализация массива структур описанных выше
     // по сути инициализаци дата модели (MVC)
     
+    
     // описание методов работы с дата моделью
     //данный метод описывает способ добавления нового элемента в датамодель
     func addTask (name:String,description:String){
        tasks.append(task(name: name,desc: description))
+        
     }
     
     func deleteTaskByIndex(){
-        tasks.removeLast();
+        
     }
 
     
 }
 
-
-
-//var addtask : (String,String)=addTask;
